@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #fe5900;
+    --secondary: #01a89e;
+}
+
+body {
+    font-family: "Outfit", serif;
+    background:linear-gradient(to right, #b7fffa,#ffc8ab);
+}
+
+#marksheet {
+    width: 210mm;
+    height: 297mm;
+    margin: 15px auto;
+    padding: 10mm;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, var(--secondary) 70%, var(--primary) 70%);
+}
+
+.marksheet-body {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 1rem 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 260px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right-side .check-logo {
+    width: 80px;
+}
+
+.text-sm {
+    font-size: 10px;
+    color: rgb(63, 63, 63);
+    text-align: center;
+    line-height: 1.2;
+}
+
+.details-big {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    line-height: 1.1;
+}
+
+.details-big-2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: rgb(85, 85, 85);
+    text-align: center;
+    letter-spacing: 2.5px;
+    line-height: 1.1;
+}
+
+.color-1 {
+    color: var(--primary);
+}
+
+.content.mt{
+    margin-top: 38px;
+}
+.content {
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 40px;
+    margin-top: 30px;
+    padding: 2rem 1.7rem .5rem 1.7rem;
+    position: relative;
+}
+
+.marksheet-title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: white;
+    padding: 4px 25px;
+    white-space: nowrap;
+    top: 0;
+    background-color: var(--primary);
+    border-radius: 50px;
+}
+
+.key-values p {
+    margin-bottom: 5px;
+}
+
+.key-values p .key {
+    width: 250px;
+    display: inline-block;
+}
+
+.key-values p .colon {
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.key-values p .value {
+    font-weight: bold;
+}
+.table{
+    margin-top: 15px;
+    border: 2px solid rgb(225, 225, 225);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.marksheet-table {
+    width: 100%;
+    border-collapse: collapse;
+    /* border: 3px solid rgb(225, 225, 225); */
+    font-size: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.marksheet-table th,
+.marksheet-table td {
+    padding: 5px;
+    text-align: center;
+}
+
+.marksheet-table th:last-child{
+    border-right: none !important;
+}
+.marksheet-table th{
+    border-right: 2px solid rgb(225, 225, 225);
+}
+.marksheet-table thead {
+    border-bottom: 2px solid rgb(225, 225, 225);
+}
+
+.marksheet-table td:first-child{
+    border-left: none !important;
+}
+.marksheet-table td:last-child{
+    border-right: none !important;
+}
+.marksheet-table td {
+    font-weight: bold;
+    text-align: center;
+    border-left: 2px solid rgb(225, 225, 225);
+    border-right: 2px solid rgb(225, 225, 225);
+}
+
+.marksheet-table td.right-align {
+    text-align: right;
+}
+td.padding-left{
+    padding-left: 25px;
+    text-align: left;
+}
+td.border-cell{
+    border: 2px solid rgb(225, 225, 225) !important;
+}
+table td.border-ad{
+    border-bottom: none !important;
+}
+.my-2{
+    margin: 7px 0;
+}
+.info {
+    border: 1px solid var(--primary);
+    padding: 5px 25px;
+    border-radius: 25px;
+    font-size: 17px;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.color-2 {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+.text-md {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.footer {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.qr_img {
+    height: 100px;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+}
+.footer-img img {
+    height: 30px;
+    margin-top: 5px;
+}
+
+.sign-img,
+.stamp-img {
+    height: 80px;
+}
+
+.stamps {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: flex-start;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(225, 225, 225);
+}
+
+
+.signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+}
+
+.authorized-sign {
+    margin-top: 17px;
+}
+
+.footer-details {
+    font-size: 11px;
+}
+
+.footer-details p {
+    border-bottom: 2px solid rgb(197, 197, 197);
+    padding-bottom: 5px;
+}
+
+.footer-highliht-1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-highliht {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.text-bigger{
+    font-size: 1.1rem;
+}
+.print-button {
+    display: flex;
+    justify-content: center;
+}
+
+.print-button button {
+    margin-top: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    background: var(--secondary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.print-button button:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.print-button button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 170, 158, 0.5);
+}
+@media print {
+    .print-button {
+        display: none;
+    }
+
+    #marksheet {
+        margin: 0;
+    }
+}
