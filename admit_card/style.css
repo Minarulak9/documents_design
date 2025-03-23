@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#fe5900;
+    --secondary:#01a89e;
+}
+body {
+    background:linear-gradient(to right, #b7fffa,#ffc8ab);
+    font-family: "Outfit", serif;
+}
+
+#certificate {
+    width: 297mm;
+    height: 210mm;
+    margin: 15px auto;
+    padding: 11.5mm;
+    box-sizing: border-box;
+    background: #fff;
+    background: linear-gradient(to right, var(--secondary) 30%, var(--primary) 30%);
+}
+
+.logo {
+    width: 360px;
+}
+
+.certificate-body {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 2rem 3rem;
+}
+
+.print-button {
+    display: flex;
+    justify-content: center;
+}
+
+.print-button button {
+    margin-top: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    background: var(--secondary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.print-button button:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.print-button button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 170, 158, 0.5);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right-side{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.right-side .check-logo{
+    width: 100px;
+}
+.text-sm{
+    font-size: 11px;
+    color: rgb(90, 90, 90);
+    text-align:center;
+    line-height: 1.2;
+}
+.details-big{
+    font-size: 22px;
+    font-weight: 800;
+    color: rgb(85, 85, 85);
+    text-align:center;
+    line-height: 1.1;
+}
+.details-big-2{
+    font-size: 26px;
+    font-weight: 800;
+    color: rgb(85, 85, 85);
+    text-align:center;
+    line-height: 1.1;
+}
+.color-1{
+    color: var(--primary);
+}
+.content{
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 40px;
+    margin-top: 40px;
+    padding: 2.5rem 1.7rem .5rem 1.7rem;
+    position: relative;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.certificate-title{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid white;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: white;
+    padding:4px 25px;
+    top: 0;
+    background-color: var(--primary);
+    border-radius: 50px;
+}
+.key-values p{
+    margin-bottom: 7px;
+}
+.key-values p .key{
+    width: 250px;
+    display: inline-block;
+}
+.key-values p .colon{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.key-values p .value{
+    font-weight: bold;
+}
+.key-values{
+    font-size: 15px;
+}
+.rihgt-values{
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+.rihgt-values p{
+    text-align: right;
+}
+.student_img{
+    width: 100px;
+    aspect-ratio: 9/12;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    /* position: absolute;
+    bottom:20px ;
+    right: 1.5rem; */
+}
+.student_signature{
+    height: 65px;
+    width: auto;
+}
+.barcode{
+    height: 55px;
+    width: auto;
+}
+.content .texts .color-2{
+    font-weight: 400 !important;
+}
+.content .texts .fw-bold{
+    font-weight: 600;
+}
+.content .texts-bootom{
+    padding:15px 80px 0px 20px ;
+    font-size: 1.1rem;
+    color: rgb(41, 41, 41);
+}
+.content .texts{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 100px;
+    letter-spacing:.5px;
+    font-weight: 400;
+}
+.content .right{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+.info{
+    border: 1px solid var(--primary);
+    padding: 5px 25px;
+    border-radius: 25px;
+    font-size: 17px;
+}
+.text-upper{
+    text-transform: uppercase;
+}
+.color-2{
+    color: var(--secondary);
+    font-weight: bold;
+}
+.text-md{
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.grade-details{
+    font-size: 17px;
+    margin-top: 5px;
+}
+.align-items-center{
+    align-items: center;
+}
+.content-bottom{
+    align-items: flex-start;
+}
+.footer{
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.qr_img{
+    height: 110px;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid gray;
+}
+.footer-logos{
+    height: 28px;
+    margin-top: 5px;
+}
+.sign-img, .stamp-img{
+    height: 60px;
+}
+.stamps{
+    display: flex;
+    font-size: 14px;
+    align-items: flex-start;
+}
+.signature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 220px;
+}
+.signature .text-center{
+    font-size: .8rem;
+    font-style: italic;
+    color: rgb(54, 54, 54);
+}
+.footer-details{
+    font-size: 11px;
+}
+.footer-highliht-1{
+    font-size: 16px;
+    font-weight: bold;
+}
+.footer p{
+    margin-bottom: 2px;
+    font-size: .7rem;
+    color: rgb(64, 64, 64);
+}
+.fw-bold{
+    font-weight: 600;
+}
+.footer-highliht{
+    font-size: 16px;
+    font-weight: bold;
+}
+.text-center{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+@media print {
+    .print-button {
+        display: none;
+    }
+
+    #certificate {
+        margin: 0;
+    }
+}

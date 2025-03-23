@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #fe5900;
+    --secondary: #01a89e;
+}
+
+body {
+    font-family: "Outfit", serif;
+    /* background:linear-gradient(to right, #b7fffa,#ffc8ab); */
+    background-color: rgb(236, 236, 236);
+}
+
+#id-card {
+    /* width: 53.98mm; */
+    /* height: 85.6mm; */
+    width: 107.96mm;
+    height: 171.2mm;
+    margin: 15px auto;
+    padding:25px;
+    box-sizing: border-box;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.right-background{
+    width: 60px;
+    height: 45%;
+    background-color: var(--secondary);
+    position: absolute;
+    top:43%;
+    right:0; 
+    z-index: -1;
+    border-radius: 20px 0 0 20px;
+    transform: translateY(-50%);
+}
+.left-background{
+    width: 60px;
+    height: 45%;
+    background-color: var(--primary);
+    border-radius: 0 20px 20px 0;
+    position: absolute;
+    left: 0;
+    top: 43%; 
+    z-index: -1;
+    transform: translateY(-50%);
+}
+.print-button {
+    display: flex;
+    justify-content: center;
+}
+
+.print-button button {
+    margin-top: 12px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    background: var(--secondary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.print-button button:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.print-button button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 170, 158, 0.5);
+}
+.institute-name{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 800;
+    line-height: 1;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    letter-spacing: 1.4px;
+    color: rgb(20, 20, 20);
+    /* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.253); */
+}
+.institute-name span{
+    font-size: 1.6rem;
+}
+.student-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.student-img{
+    width: 130px;
+    height: 140px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 22px auto;
+    margin-bottom: 15px;
+}
+.details{
+    text-align: center;
+    font-weight: 700;
+    color: #323232;
+}
+.name{
+    text-transform: uppercase;
+    color: var(--secondary);
+    font-size: 1.5rem;
+
+}
+.text-sec{
+    color: var(--primary);
+}
+.course{
+    font-size: 1.7rem;
+}
+.call {
+    font-size: 1.2rem;
+    margin: 8px 0;
+}
+.call .key{
+    margin-right: 8px;
+}
+.code{
+    color: var(--primary);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+.qr-img{
+    text-align: center;
+    margin: 5px 0;
+}
+.qr{
+    width: 90px;
+}
+.footer-img{
+    text-align: center;
+}
+.footer-img img{
+    width: 85%;
+}
+
+@media print {
+    .print-button {
+        display: none;
+    }
+
+    #marksheet {
+        margin: 0;
+    }
+}
